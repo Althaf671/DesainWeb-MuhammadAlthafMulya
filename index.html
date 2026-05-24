@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora - Fresh Grocery Delivery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- shopping cart -->
+    <div class="cart-container">
+        <a href="#"><i class="fas fa-shopping-cart cart" style="color: white; margin-top: 2px; margin-left: -2px;"></i></a>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+
+        <!-- logo -->
+        <a class="logo" href="#">agora</a>
+
+        <!-- center container -->
+        <div class="center-container">
+            <ul class="menu-item-container">
+                <li><a style="text-decoration: underline;" href="#hero">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <!-- actions -->
+        <div class="action-container">
+            <div class="search-container">
+                <div style="display: flex; gap: 0.35rem; align-items: center; margin-left: 10px;">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Find products">
+                </div>
+            </div>
+            <a href="#"><i class="far fa-bell"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-user-circle"></i></a>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero__section">
+            <div class="left">
+                <h1 class="hero-text">Make healthy life with <span>fresh</span><br>grocery</h1>
+                <p style="opacity: 65%;">Get fresh vegetables, fruits, and daily groceries delivered to your home.</p>
+                <button class="cta-btn">Shop now <span><p>></p></span></button>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Image">
+                </div>
+                <!-- <p class="floating-text">Get fresh vegetables, fruits, and daily groceries delivered to your home.</p> -->
+            </div>
+    </section>
+
+    <!-- ========== FEATURED CATEGORIES ========== -->
+    <section class="featured__section">
+            <div class="section-title-1">
+                <h2>Featured <span>Categories</span></h2>
+                <a class="subtitle" href="#">View all <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <!-- Category Cards -->
+            <div class="category-cards">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1664551735237-a0ebe277bcdd?q=80&w=988&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vegetables">
+                    <p>Vegetables</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1628543108325-1c27cd7246b3?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meat">
+                    <p>Meat</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Seafood">
+                    <p>Seafood</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fruits">
+                    <p>Fruits</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bakery">
+                    <p>Bakery</p>
+                </div>
+            </div>
+            <!-- Promotional Cards -->
+            <div class="promo-card-container">
+                <div class="promo-card">
+                    <div class="promo-content">
+                        <div>Flat 20% Discount</div>
+                        <h3>Purely Fresh<br>Vegetables</h3>
+                        <button class="promo-cta-btn">Buy now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vegetables Promo">
+                </div>
+                <div class="promo-card">
+                    <div class="promo-content">
+                        <div>Flat 25% Discount</div>
+                        <h3>Fresh Fruits<br>Pure Quality</h3>
+                        <button class="promo-cta-btn">Buy now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1467453678174-768ec283a940?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fruits Promo">
+                </div>
+            </div>
+    </section>
+
+    <!-- ========== FEATURED PRODUCTS ========== -->
+    <section class="featured__products">
+            <div class="title">
+                <p>Products</p>
+                <h2>Featured <span>Products</span></h2>
+            </div>
+            <!-- List Produk -->
+            <div class="product-list">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1676686126965-cb536e2328c3?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Premium Egg">
+                    <h3>Premium Egg</h3>
+                    <p>Telur segar langsung dari vendor.</p>
+                    <div class="card-action">
+                        <p class="price">$9.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beef Steak">
+                    <h3>Beef Steak</h3>
+                    <p>Dayum steak, kinda expensive.</p>
+                    <div class="card-action">
+                        <p class="price">$80.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1617112848923-cc2234396a8d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Papaya">
+                    <h3>Papaya</h3>
+                    <p>Pepaya asli dari suliki.</p>
+                    <div class="card-action">
+                        <p class="price">$18.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1725384940692-dc02e26ee9b1?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Watermelon">
+                    <h3>Watermelon</h3>
+                    <p>Semangka segar premium</p>
+                    <div class="card-action">
+                        <p class="price">$12.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1587883012610-e3df17d41270?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="PineApple">
+                    <h3>PineApple</h3>
+                    <p>Nanas berkualitas asli.</p>
+                    <div class="card-action">
+                        <p class="price">$9.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1695399564855-1f531f66a8ee?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tuna">
+                    <h3>Tuna</h3>
+                    <p>Tuna asli dari Jepang.</p>
+                    <div class="card-action">
+                        <p class="price">$12.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1580052614034-c55d20bfee3b?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Orange">
+                    <h3>Orange</h3>
+                    <p>Jeruk India murni.</p>
+                    <div class="card-action">
+                        <p class="price">$9.89</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1676374604592-690a4179b6a2?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Apple">
+                    <h3>Apple</h3>
+                    <p>Apple Malang premium.</p>
+                    <div class="card-action">
+                        <p class="price">$8.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- See More Button -->
+            <div class="see-more-btn">
+                <button>See More</button>
+            </div>
+    </section>
+
+    <!-- ========== SUMMER DISCOUNT ========== -->
+    <section class="discount__section">
+            <!-- left -->
+            <div class="left">
+                <div class="left-content">
+                    <h2>Summer Discount</h2>
+                    <p class="subtitle">Get 50% off Limited Time Offer</p>
+
+                    <div class="clock">
+                        <div class="clock-item">
+                            <span id="days">00</span>
+                            <span>Days</span>
+                        </div>
+                        <div class="clock-item">
+                            <span id="hours">00</span>
+                            <span>Hours</span>
+                        </div>
+                        <div class="clock-item">
+                            <span id="minutes">00</span>
+                            <span>Minutes</span>
+                        </div>
+                        <div class="clock-item">
+                            <span id="seconds">00</span>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+
+                    <button>Shop now</button>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1545186182-9faaf78480b8?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Summer Discount">
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <img src="https://images.unsplash.com/photo-1610492219815-f76905e3f084?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Another image">
+            </div>
+    </section>
+
+    <!-- ========== DEALS OF THE DAY ========== -->
+    <section class="deals__section">
+            <div class="title">
+                <p>Today Deals</p>
+                <h2>Deals of the Day <span>Price under $10</span></h2>
+            </div>
+            <!-- List Produk -->
+            <div class="product-list">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Chicken Fillet">
+                    <h3>Chicken Fillet</h3>
+                    <p>50 grams of protein.</p>
+                    <div class="card-action">
+                        <p class="price">$4.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1723893905879-0e309c2a8e06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beef">
+                    <h3>Beef</h3>
+                    <p>Daging sapi 100% premium</p>
+                    <div class="card-action">
+                        <p class="price">$7.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1580910365203-91ea9115a319?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spinach">
+                    <h3>Spinach</h3>
+                    <p>Sayur segar dan sehat.</p>
+                    <div class="card-action">
+                        <p class="price">$5.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1661963465934-55eeb52f64d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cabbage">
+                    <h3>Cabbage</h3>
+                    <p>Lobak terbaik dari lembah.</p>
+                    <div class="card-action">
+                        <p class="price">$6.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1669207334420-66d0e3450283?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mango">
+                    <h3>Mango</h3>
+                    <p>Mango mango mango.</p>
+                    <div class="card-action">
+                        <p class="price">$4.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Apple 1kg">
+                    <h3>Apple 1kg</h3>
+                    <p>Isi keranjang ruang tamu anda.</p>
+                    <div class="card-action">
+                        <p class="price">$8.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1594489428504-5c0c480a15fd?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banana">
+                    <h3>Banana</h3>
+                    <p>Buah pisang terbaik di kota.</p>
+                    <div class="card-action">
+                        <p class="price">$7.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1671624749229-7d37826013b5?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avocado">
+                    <h3>Avocado</h3>
+                    <p>Alpukat segar dan premium.</p>
+                    <div class="card-action">
+                        <p class="price">$8.99</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- See More Button -->
+            <div class="see-more-btn">
+                <button>See More</button>
+            </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="upper-footer">
+            <div class="title">
+                <h5>Fresh from the start</h5>
+                <p>Fresh groceries delivered to your doorstep. Making healthy living accessible to everyone.</p>
+            </div>
+            <div class="quick-link-container">
+                <div class="quick-links">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <h6>Support</h6>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="quick-links">
+                    <h6>Legal</h6>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licenses</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h6>Follow Us</h6>
+                <div class="sosmed">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <hr> -->
+
+        <div class="lower">
+            <p>&copy; 2024 Agora. All rights reserved. | Fresh Grocery Delivery Service</p>
+        </div>
+
+        <div class="last-logo">
+            agora
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
